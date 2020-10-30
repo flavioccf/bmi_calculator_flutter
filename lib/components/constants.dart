@@ -17,3 +17,12 @@ const TextStyle kBigNumberTextStyle = TextStyle(
 const kAccentColor = Color(0xFFEB1555);
 const kInactiveAccentColor = Color(0xFF8D8E98);
 const kFButtonColor = Color(0xFF4C4F5E);
+const TextStyle kLargeButtonTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kTitleTextStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
