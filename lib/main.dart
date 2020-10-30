@@ -8,7 +8,7 @@ class BMICalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: appDarkTheme(),
+      theme: appTheme(),
       home: InputPage(),
     );
   }

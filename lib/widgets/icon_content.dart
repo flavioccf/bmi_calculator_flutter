@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
-const TextStyle textStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0XFF8D8E98),
-);
+import 'package:bmi_calculator/components/constants.dart';
 
 class IconContent extends StatelessWidget {
   IconContent({@required this.fontIcon, @required this.cardText});
@@ -25,7 +21,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           cardText,
-          style: textStyle,
+          style: kTextStyle,
         )
       ],
     );

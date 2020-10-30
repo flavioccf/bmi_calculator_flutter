@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-
-const activeColor = Color(0xFF1D1E33);
-const inactiveCardColor = Color(0xFF111328);
+import 'package:bmi_calculator/components/constants.dart';
 
 class ReusableCard extends StatelessWidget {
-  ReusableCard({this.color, this.cardChild, this.function});
+  ReusableCard({this.color, this.cardChild, this.onPress});
   final Color color;
   final Widget cardChild;
-  final function;
+  final Function onPress;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: function,
+      onTap: onPress,
       child: Container(
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
-          color: (color != null ? color : activeColor),
+          color: (color != null ? color : kActiveCardColor),
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: cardChild,
